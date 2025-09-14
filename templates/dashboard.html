@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Home</title>
+    <title>Dashboard</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to Secure Auth App</h1>
-        <a href="/register">Register</a> | <a href="/login">Login</a>
+        <h1>Welcome, {{ username }}!</h1>
+        <h3>Successfully Logged In.</h3>
+        <p>Your account is now secure.</p>
+        <a href="/logout">Logout</a>
     </div>
 </body>
 </html>
